@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>banking site</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .bank {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: antiquewhite;
+        height: 100vh;
+        width: 100%;
+      }
+      .bank-taka {
+        display: flex;
+        padding-top: 3rem;
+        justify-content: center;
+      }
+
+      p {
+        text-align: left;
+        background-color: rgb(55, 0, 255);
+        padding: 30px 200px 30px 15px;
+        margin-left: 1rem;
+        color: #fff;
+        font-size: 20px;
+        font-weight: 900;
+        border-radius: 8px;
+      }
+      .balance {
+        background-color: blueviolet;
+      }
+      .withdraw {
+        background-color: rgb(52, 157, 161);
+      }
+      .deposit-area {
+        display: flex;
+        margin-top: 3rem;
+      }
+      .diposit-money {
+        padding: 30px 100px 30px 15px;
+        background-color: rgba(230, 227, 25, 0.718);
+        margin: 20px;
+        border-radius: 5px;
+      }
+      .withdraw-money {
+        padding: 30px 100px 30px 15px;
+        background-color: rgb(47, 240, 130);
+        margin: 20px;
+        border-radius: 5px;
+      }
+      h4 {
+        font-size: 22px;
+        margin-bottom: 1rem;
+      }
+      input {
+        padding: 0.5rem;
+        border-radius: 4px;
+        border: none;
+        outline: none;
+      }
+      button {
+        padding: 0.5rem;
+        border-radius: 4px;
+        border: none;
+        cursor: pointer;
+        color: #fff;
+        font-weight: 700;
+        background-color: rgb(221, 17, 95);
+      }
+      .deshboard {
+        background-color: rgb(101, 110, 110);
+        padding: 1rem;
+        color: #fff;
+        border-radius: 8px 0px 8px 0px;
+      }
+      img {
+        margin-bottom: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bank">
+      <img src="download.png" alt="" />
+      <h1 style="text-align: center; padding-top: 1rem">
+        <span class="deshboard">DashBoard</span>
+      </h1>
+      <div class="bank-taka">
+        <p>
+          Deposit<br /><br />
+          $<span id="curent-deposit">00</span>
+        </p>
+        <p class="withdraw">
+          Withdraw<br /><br />
+          $<span id="curent-withdraw">00</span>
+        </p>
+        <p class="balance">
+          Balance<br /><br />
+          $<span id="curent-blance">100000</span>
+        </p>
+      </div>
+      <div class="deposit-area">
+        <div class="diposit-money">
+          <h4>Please Deposit</h4>
+          <input
+            id="deposit-input"
+            type="text"
+            placeholder="$ amount to deposit"
+          />
+          <button id="depositbtn">Deposit</button>
+        </div>
+        <div class="withdraw-money">
+          <h4>Please Withdraw</h4>
+          <input
+            id="withdraw-input"
+            type="text"
+            placeholder="$ amount to withdraw"
+          />
+          <button id="withdraw-button">Withdraw</button>
+        </div>
+      </div>
+    </div>
+    <script src="baaperTaka.js"></script>
+  </body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>baaper bank</title>
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .control {
+        background-color: rgba(0, 239, 252, 0.711);
+        height: 100%;
+      }
+      input {
+        width: 50%;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        border-radius: 5px;
+        border: 2px solid navy;
+        background-color: transparent;
+      }
+      #top2 {
+        margin-top: 4rem;
+        padding: 1rem;
+      }
+      #top {
+        margin-top: 9rem;
+        padding: 1rem;
+      }
+      button {
+        position: absolute;
+        bottom: 2;
+        left: 50%;
+        top: 50%;
+
+        transform: translateX(-50%);
+        padding: 1rem;
+
+        background-color: transparent;
+        border: none;
+        border: 2px solid rgb(112, 112, 204);
+        border-radius: 5px;
+        cursor: pointer;
+        width: 10vw;
+
+        text-transform: uppercase;
+      }
+      h3 {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="text-align: center">
+      Welcome to my <span style="color: blue">Baap-Er-Bank!!!</span>
+    </h1>
+    <h3>Please Log In</h3>
+    <div
+      style="
+        border: 2px solid rgb(156, 75, 75);
+        width: 80%;
+        height: 50vh;
+        margin: 0 auto;
+        border-radius: 5px;
+      "
+    >
+      <input type="text" id="top2" placeholder="Enter your Email" required />
+      <br />
+      <input type="password" id="top" placeholder="Password" required /><br />
+      <button id="submit_btn">Submit</button><br />
+    </div>
+    <script src="baaperBank.js"></script>
+  </body>
+</html>
